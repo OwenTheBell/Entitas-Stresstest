@@ -2,9 +2,10 @@
 using Entitas;
 using Entitas.CodeGeneration.Attributes;
 
-[Game]
+[Game, Unique]
 public class IntensityComponent : IComponent {
     public int value;
+    public Vector2 range;
 }
 
 [Game]
